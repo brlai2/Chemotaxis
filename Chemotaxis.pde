@@ -1,6 +1,6 @@
 Bacteria [] bob;
-int x = 0;
-int y = 0;
+int x = 250;
+int y = 250;
 void setup()   
 {     
   size(500, 500);
@@ -26,7 +26,7 @@ class Bacteria
   {
     myX = x;
     myY = y;
-    myColor = color((int)(Math.random()*1));
+    myColor = myColor+(int)(Math.random()*255);
   }
   void show()
   {
@@ -35,7 +35,7 @@ class Bacteria
   }
   void walk()
   {
-    myX = myX + (int)Math.random()*3-1;
-    myY = myY + (int)Math.random()*3-1;
+    myX = myX + (int)(Math.random()*11)-5;
+    myY = myY + (int)(Math.random()*11)-5;
   }
 }
